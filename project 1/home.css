@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8vmUjXvqWh5jFlaZgH0eMzIN-xxRQPo326g&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+.navb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#333;
+    opacity: 0.2;
+    color: #fff;
+}
+.navb:hover{
+opacity: 0.5;
+background-color: coral;
+}
+.logo img{
+    margin:0px;
+    padding: 0px;
+    height:70px;
+    top: 0px;
+}  
+.navlinks ul{
+    margin: 0px;
+    padding:0px;
+    display: flex;
+}
+.navlinks ul li{
+    list-style: none;
+}
+.navlinks ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+}
+.navlinks ul li a:hover{
+    background-color:darksalmon;  
+}
+.ham{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.ham .bar{
+    height: 3px;
+    width: 85%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+@media (max-width: 400px){
+    .ham{
+        display: flex;
+    }
+    .navlinks{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction:column;
+        align-items: flex-start;
+    }
+    .navlinks ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navlinks ul li{
+        text-align: center;
+    }
+    .navlinks ul li a{
+        padding: .8rem 1.5rem;
+    }
+    .navlinks.active{
+        display: flex;
+    }
+}
+.para{
+    font-size: 50px;
+    font-family:Macondo;
+    color:black;
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right:60px ;
+    float: right;
+    
+    text-align: right;
+}
+.pro{
+    font-size: 20px;
+    font-family: cursive;
+    color:black;
+}
+.sidebar {
+    /* margin: 0px; */
+    /* padding: 0px; */
+    width: 70px;
+    background-color:hsl(34, 57%, 70%,0.3);
+    position: fixed;
+    height: 100%;
+    /* overflow: auto; */
+    transition: width 1s;
+  }
+  .hide{
+      visibility: hidden;
+  }
+  .sidebar:hover{
+    width:100px;
+  }
+  .sidebar:hover .hide{
+    visibility: visible;
+   }
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  .profile{
+    background-color: rgb(1, 9, 4);
+    display:contents;
+    
+    width: 30px;
+    height:100vh;
+    transition:width 1s;
+ }
+
