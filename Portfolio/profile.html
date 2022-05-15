@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+<body>
+    <div id="menu-bars" class="fas fa-bars"></div>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"> <span>Mahek</span> Garg </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#services">services</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="follow">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+
+</header>
+<section class="home" id="home">
+
+    <div class="content">
+        <span class="hi"> hi there... </span>
+        <h3> i am <span> Mahek Garg </span> </h3>
+        <p class="info"> i am a developer </p>
+        <p class="text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quidem excepturi natus iste ut. Alias, quod? Earum pariatur obcaecati dolorum! </p>
+        <a href="#about" class="btn">about me</a>
+    </div>
+    <div class="image">
+        <img src="pexels-stephanie-ho-1214205.jpg" alt="">
+    </div>
+    </section>
+    <section class="about" id="about">
+
+        <h1 class="heading"> about <span> me </span> </h1>
+        <p class="dev">Full-Stack Developer</p>
+        <p class="me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptate, culpa eum fuga eius in unde repudiandae possimus tempore, facere quo quod labore accusantium molestiae optio at veniam sapiente fugit.</p>
+        <button class="btn1" id="butt" type="button">Download CV</button>
+        <div id="tag"></div>
+        <button class="btn" id="hire" type="button"> Hire ME</button>
+        <div class="contact">
+            
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h1 class="heading"> My <span> Skills </span> </h1>
+        <div class="progress">
+            <h3> JAVA <span> 90% </span> </h3>
+            <div class="bar"> <span></span> </div>
+        </div>
+        <div class="progress">
+            <h3> C Language <span> 80% </span> </h3>
+            <div class="bar"> <span></span> </div>
+        </div>
+        <div class="progress">
+            <h3>Web Development <span> 75% </span> </h3>
+            <div class="bar"> <span></span> </div>
+        </div>
+        <div class="progress">
+            <h3> My SQL <span> 85% </span> </h3>
+            <div class="bar"> <span></span> </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="wrapper">
+            <h1 class="heading"> Our <span> Services </span> </h1>
+          <div class="line">
+          </div>
+          <div class="single-service">
+                <div class="social">
+          <i class="fa fa-codepen"></i></div>
+          <span></span>
+                 <h3>
+          Web Design</h3>
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et delectus, in veritatis veniam non praesentium corporis dolorum necessitatibus. Culpa odio enim amet praesentium illo voluptates ab quidem, nam consequuntur. Natus.</p>
+          </div>
+          <div class="single-service">
+                <div class="social">
+          <i class="fa fa-cogs"></i></div>
+          <span></span>
+                 <h3>
+          Web Development</h3>
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et delectus, in veritatis veniam non praesentium corporis dolorum necessitatibus. Culpa odio enim amet praesentium illo voluptates ab quidem, nam consequuntur. Natus.</p>
+          </div>
+          <div class="single-service">
+                <div class="social">
+          <i class="fa fa-diamond"></i></div>
+          <span></span>
+                 <h3>
+          Java </h3>
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et delectus, in veritatis veniam non praesentium corporis dolorum necessitatibus. Culpa odio enim amet praesentium illo voluptates ab quidem, nam consequuntur. Natus.</p>
+          </div>
+          </div>     
+    </section>
+    <section class="project" id="project">
+        <h1 class="heading"> My <span> Projects </span> </h1>
+        <div id="projects"></div>
+    </section>
+<section class="contact" id="contact">
+    <h1 class="heading"> Contact <span> Me </span> </h1>
+    <div class="container">
+    <form action="#" onsubmit="return check_form();">
+        <div class="for">
+          <div>   
+          <label for="name" id="fullname">Full Name</label>
+            <input type="text" placeholder="Enter your FullName" id='fname' >
+        </div>
+        <div id="NameTag"></div>
+        <br>
+        <div>
+         <label for="E-mail" id="email">E-mail</label>
+         <input id="email" type="text" placeholder="Enter Your email" >
+     </div>
+     <div id="MailTag"></div>
+     <br>
+     <div>
+         <label for="Mobile-Number" id="mob">Mobile Nmber</label>
+         <input id="mobile" type="text" placeholder="Enter Your Mobile Number" >
+     </div>
+     <div id="MobileTag"></div>
+     <br>
+     <p>
+        <input type="submit" 
+               value="submit" name="Submit" />
+    </p>
+    <div id="submitted"></div>
+    </form>   
+        </div>
+       
+</div>
+</section>
+    <script src="profile.js"></script>
+</body>
+</html>
